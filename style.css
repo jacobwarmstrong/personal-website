@@ -1,6 +1,7 @@
 /* style.css */
 
 .block {
+    position: relative;
     background-color: #f8f9fa;
     padding: 2rem;
     margin-top: 1em;
@@ -9,4 +10,22 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Archivo Black";
+}
+
+.block-highlighter {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ff3333;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.appear {
+    width: 6px;
+    height: 100%;
 }
