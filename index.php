@@ -23,12 +23,15 @@ if(isset($_GET['email']) && $_GET['email'] == 'success') {
     <!---Personal Stylesheet--->
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <title>Hello, world!</title>
+    <title>Jacob W Armstrong | Atlanta, GA</title>
   </head>
   <body>
 
     <nav class="navbar navbar-light bg-light">
-      <span class="navbar-brand mb-0 h1">jacobwarmstrong</span>
+      <div class="container-md">
+        <span class="navbar-brand mb-0 h1">jacobwarmstrong</span>
+      </div>
+      
     </nav>
 
     <div class="container-md">
@@ -37,9 +40,19 @@ if(isset($_GET['email']) && $_GET['email'] == 'success') {
               </div>
             <?php endif; ?>
         <div class="block">
-            <h1 class="mb-3">Hello World!</h1>
-            <img class="img-fluid rounded-circle mb-4" src="assets/jake_2020_tighter_crop_800x800.jpg" alt="Jacob W Armstrong | Frontend Developer, CNC Programmer, Graphic Designer">
-            <p>Welcome to my website! You could consider me a jack of all trades, and a master of none. Although, I prefer to think of myself more of a renaissance man.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="mb-3">Jacob W Armstrong from Atlanta, Georgia</h1>
+                    <p>Welcome to my website! You could consider me a jack of all trades, and a master of none. Although, I prefer to think of myself more of a renaissance man.</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid rounded-circle mb-4" src="assets/jake_2020_tighter_crop_800x800.jpg" alt="Jacob W Armstrong | Frontend Developer, CNC Programmer, Graphic Designer">
+
+                </div>
+            </div>
+
+
+
         </div>
         <div class="block">
             <h3 class="mb-3">A Wide Array Of Interests</h3>
