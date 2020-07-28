@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/vendor/autoload.php';
+require('config/bootstrap.php');
 
 if(isset($_GET['email']) && $_GET['email'] == 'success') {
     $message = 'Your Mail was Sent. Thank you.';

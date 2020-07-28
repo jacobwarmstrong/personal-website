@@ -3,3 +3,6 @@ assets
 
 #ignore vendor
 vendor
+
+#ignore environment file
+.env

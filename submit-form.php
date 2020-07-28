@@ -1,7 +1,6 @@
 <?php
 //submit-form.php
-
-require __DIR__ . '/vendor/autoload.php';
+require('config/bootstrap.php');
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -12,16 +11,16 @@ $message = $_POST['message'];
 
 $mail = new PHPMailer;
 $mail->isSMTP();
-$mail->Host = 'rootlessdesigns.com';
+$mail->Host = $_ENV['EMAIL_HOST'];
 $mail->SMTPAuth = true;
-$mail->Username = "jacob@rootlessdesigns.com";
-$mail->Password = "D0n'tTread0nM3";
+$mail->Username = $_ENV['EMAIL_USERNAME'];
+$mail->Password = $_ENV['EMAIL_PASSWORD'];
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
-$mail->From = 'jacob@rootlessdesigns.com';
+$mail->From = $_ENV['EMAIL_USERNAME'];
 $mail->FromName = 'Portfolio Website';
-$mail->addAddress('jacob@rootlessdesigns.com', 'Portfolio Website');
-$mail->addReplyTo('jacob@rootlessdesigns.com');
+$mail->addAddress($_ENV['EMAIL_USERNAME'], 'Portfolio Website');
+$mail->addReplyTo($_ENV['EMAIL_USERNAME']);
 $mail->isHTML(TRUE);
 $mail->Subject = 'Someone contacted you!';
 
