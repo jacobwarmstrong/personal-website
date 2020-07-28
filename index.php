@@ -40,8 +40,11 @@ if(isset($_GET['email']) && $_GET['email'] == 'success') {
     <nav class="navbar navbar-light bg-light">
       <div class="container-md">
         <span class="navbar-brand mb-0 h1">jacobwarmstrong</span>
-      </div>
-      
+        <ul class="list-inline my-3">
+          <li class="list-inline-item"><a href="https://twitter.com/jacobwarmstrong" target="new"><?php echo file_get_contents('assets/iconmonstr-twitter-1.svg'); ?></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/jacob_w_armstrong/" target="new"><?php echo file_get_contents('assets/iconmonstr-instagram-11.svg'); ?></a></li>
+        </ul>
+      </div> 
     </nav>
 
     <div class="container-md">

@@ -16,6 +16,14 @@ footer {
     color: #eee;
 }
 
+nav .social-icon {
+    fill: #212529;
+}
+
+nav .social-icon:hover {
+    fill: #444;
+}
+
 footer .social-icon {
     fill: #eeeeee;
 }
