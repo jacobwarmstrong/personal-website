@@ -131,7 +131,17 @@ if(isset($_GET['email']) && $_GET['email'] == 'success') {
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
         </div>
-    </div> 
+    </div>
+      
+    <footer class="footer p-4">
+      <div class="container-md">
+        jacobwarmstrong.com | Home of Jacob W Armstrong from Atlanta, Georgia
+        <ul class="list-inline my-3">
+          <li class="list-inline-item"><a href="https://twitter.com/jacobwarmstrong" target="new"><?php echo file_get_contents('assets/iconmonstr-twitter-1.svg'); ?></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/jacob_w_armstrong/" target="new"><?php echo file_get_contents('assets/iconmonstr-instagram-11.svg'); ?></a></li>
+        </ul>
+      </div>
+    </footer>
 
   </body>
 </html>
