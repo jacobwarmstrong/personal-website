@@ -56,7 +56,7 @@ if(isset($_GET['email']) && $_GET['email'] == 'success') {
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="mb-3">Jacob W Armstrong from Atlanta, Georgia</h1>
-                    <p>Welcome to my website! You could consider me a jack of all trades, and a master of none. Although, I prefer to think of myself more of a renaissance man.</p>
+                    <p>Thank you for visiting my website! My name is Jacob W Armstrong from Atlanta, Georgia. You could consider me a jack of all trades, and a master of none. Although, I prefer to think of myself more of a renaissance man.</p>
                 </div>
                 <div class="col-md-6">
                     <img class="img-fluid rounded-circle mb-4" src="assets/jake_2020_tighter_crop_800x800.jpg" alt="Jacob W Armstrong | Frontend Developer, CNC Programmer, Graphic Designer">
@@ -68,7 +68,7 @@ if(isset($_GET['email']) && $_GET['email'] == 'success') {
 
         </div>
         <div class="block">
-            <h3 class="mb-3">A Wide Array Of Interests</h3>
+            <h3 class="mb-3">My Wide Array Of Interests</h3>
             <p>Does curiousity kill the cat? Sometimes I wonder if all my various endeavors lead to a lot of unfinished business. But then again, variety is the spice of life, isn't it?</p>
             <h6>Things That Get Me Up In The Mornings</h6>
             <ul class="">
@@ -82,7 +82,7 @@ if(isset($_GET['email']) && $_GET['email'] == 'success') {
         </div>
         <div class="block">
             <h3 class="mb-3">What Do I Bring To The Table?</h3>
-            <p>If you are looking for a unique hire that can wear many different hats, I think I am definitely a candidate.</p>
+            <p>If you are looking for a unique hire that can wear many different hats, I believe I may be candidate.</p>
             <h6>Skills</h6>
             <ul>
                 <li>HTML/CSS</li>
@@ -110,9 +110,9 @@ if(isset($_GET['email']) && $_GET['email'] == 'success') {
             <p>I'm ready to continue writing new chapters to my story. Will you help me?</p>
             <ul>
                 <li>Graduated from The University Of Georgia with a AB Studio Art Degree</li>
-                <li>Started as a Graphic Designer at a local sign shop. Learned CNC and how to design and build things from start to finish</li>
+                <li>Started out of college as a Graphic Designer at AKO Signs. Learned CNC and how to design and build things from start to finish</li>
                 <li>Became AKO Signs web designer and manager during this time</li>
-                <li>Moved to Atlanta and transistioned into the film industry. Became CNC Foreman in 2 years and lead construction builds on HBO's Watchmen and Netflix's Thunder Force</li>
+                <li>Moved to Atlanta and transistioned into the film industry. Reached CNC Foreman within 2 years and lead construction builds on HBO's Watchmen and Netflix's Thunder Force</li>
             </ul>
         </div>
         <div class="block">
