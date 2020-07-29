@@ -3,7 +3,7 @@
 
 function check_if_mail_sent($mail) {
     if(isset($mail) && $mail == 'success') {
-        $message = 'Your Mail was Sent. Thank you.';
+        $message = 'Your mail was sent. Thank you.';
     } else {
         $message = false;
     }

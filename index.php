@@ -34,9 +34,11 @@ $message = check_if_mail_sent($_GET['email']);
   </head>
   <body>
 
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light sticky-top">
       <div class="container-md">
-        <span class="navbar-brand mb-0 h1">jacobwarmstrong</span>
+        <span class="navbar-brand mb-0 h1">
+            <img class="rounded-circle mr-2" src="/assets/jake_2020_tighter_crop_800x800.jpg" width="40" height="40" alt="Jacob W Armstrong | Frontend Developer, CNC Programmer, Graphic Designer">
+            jacobwarmstrong</span>
         <ul class="list-inline my-3">
           <li class="list-inline-item"><a href="https://twitter.com/jacobwarmstrong" target="new"><?php echo file_get_contents('assets/iconmonstr-twitter-1.svg'); ?></a></li>
             <li class="list-inline-item"><a href="https://www.instagram.com/jacob_w_armstrong/" target="new"><?php echo file_get_contents('assets/iconmonstr-instagram-11.svg'); ?></a></li>
@@ -46,7 +48,7 @@ $message = check_if_mail_sent($_GET['email']);
 
     <div class="container-md">
             <?php if ($message) : ?>
-              <div class="alert alert-success" role="alert"><?php echo $message; ?>
+              <div class="alert alert-success my-3" role="alert"><?php echo $message; ?>
               </div>
             <?php endif; ?>
         <div class="block">
