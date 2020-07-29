@@ -1,11 +1,8 @@
 <?php
+//fire up our application
 require('config/bootstrap.php');
 
-if(isset($_GET['email']) && $_GET['email'] == 'success') {
-    $message = 'Your Mail was Sent. Thank you.';
-} else {
-    $message = false;
-}
+$message = check_if_mail_sent($_GET['email']);
 
 ?>
 
