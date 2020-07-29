@@ -34,10 +34,10 @@ $message = check_if_mail_sent($_GET['email']);
   </head>
   <body>
 
-    <nav class="navbar navbar-light bg-light sticky-top">
+    <nav id="header" class="navbar navbar-light bg-light sticky-top">
       <div class="container-md">
         <span class="navbar-brand mb-0 h1">
-            <img class="rounded-circle mr-2" src="/assets/jake_2020_tighter_crop_800x800.jpg" width="40" height="40" alt="Jacob W Armstrong | Frontend Developer, CNC Programmer, Graphic Designer">
+            <img id="header-avatar" class="rounded-circle mr-2 disappear" src="/assets/jake_2020_tighter_crop_800x800.jpg" width="40" height="40" alt="Jacob W Armstrong | Frontend Developer, CNC Programmer, Graphic Designer">
             jacobwarmstrong</span>
         <ul class="list-inline my-3">
           <li class="list-inline-item"><a href="https://twitter.com/jacobwarmstrong" target="new"><?php echo file_get_contents('assets/iconmonstr-twitter-1.svg'); ?></a></li>
@@ -51,7 +51,7 @@ $message = check_if_mail_sent($_GET['email']);
               <div class="alert alert-success my-3" role="alert"><?php echo $message; ?>
               </div>
             <?php endif; ?>
-        <div class="block">
+        <div id="intro" class="block">
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="mb-3">Jacob W Armstrong from Atlanta, Georgia</h1>
@@ -144,6 +144,13 @@ $message = check_if_mail_sent($_GET['email']);
         </ul>
       </div>
     </footer>
+      
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+      </script>
+      <script src="js/animate-header-on-scroll.js"></script>
 
   </body>
 </html>

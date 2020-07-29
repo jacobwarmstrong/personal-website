@@ -31,3 +31,21 @@ footer .social-icon {
 footer .social-icon:hover {
     fill: #ccc;
 }
+
+.disappear {
+    opacity: 0;
+    margin-left: -50px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.appear {
+    opacity: 100%;
+    margin-left: 0px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
