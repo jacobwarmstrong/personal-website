@@ -5,6 +5,15 @@ require('config/bootstrap.php');
 $email = isset($_GET['email']) ? $_GET['email'] : null;
 $message = check_if_mail_sent($email);
 
+$skills = [];
+$html = ['src' => 'assets/skills-logos/html-5.svg', 'alt' => 'HTML 5'];
+$css = ['src' => 'assets/skills-logos/css3.svg', 'alt' => 'CSS 3'];
+$js = ['src' => 'assets/skills-logos/javascript.svg', 'alt' => 'Javascript'];
+$jQuery = ['src' => 'assets/skills-logos/jquery-1.svg', 'alt' => 'jQuery'];
+$php = ['src' => 'assets/skills-logos/php-logo.svg', 'alt' => 'jQuery'];
+
+$skills = [$html, $css, $js, $jQuery];
+
 ?>
 
 <!doctype html>
@@ -84,26 +93,19 @@ $message = check_if_mail_sent($email);
             <h3 class="mb-3">What Do I Bring To The Table?</h3>
             <p>If you are looking for a unique hire that can wear many different hats, I believe I may be candidate.</p>
             <h6>Skills</h6>
-            <ul>
-                <li>HTML/CSS</li>
-                <li>PHP (OOP)</li>
-                <li>SQL Databases</li>
-                <li>Bootstrap</li>
-                <li>Javascript</li>
-                <li>JQuery</li>
-                <li>WordPress</li>
-                <li>WooCommerce</li>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-                <li>Premier</li>
-                <li>Rhino</li>
-                <li>Sketchup</li>
-                <li>V-Carve/Aspire</li>
-                <li>FANUC Controllers</li>
-                <li>G-code</li>
-                <li>Google Analytics</li>
-                <li>Moz Pro</li>
-            </ul>
+            <div class=" d-flex flex-row align-content-stretch flex-wrap my-3">
+            <?php
+            $dir = 'assets/skills-logos/';
+            $files = scandir($dir);
+            foreach ($files as $file) :
+                if(strpos($file, '.') !== 0) : ?>
+                    <div class="col-6 col-md-3 py-3 my-md-0 align-self-center align-items-center d-flex justify-content-center skills-logo">
+                        <img class="p-0" src="<?php echo $dir . $file; ?>">
+                    </div>
+                <?php endif;
+            endforeach;
+            ?>
+            </div>
         </div>
         <div class="block">
             <h3>A Brief Summary Of My Professional Career</h3>
