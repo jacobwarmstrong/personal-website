@@ -2,7 +2,8 @@
 //fire up our application
 require('config/bootstrap.php');
 
-$message = check_if_mail_sent($_GET['email']);
+$email = isset($_GET['email']) ? $_GET['email'] : null;
+$message = check_if_mail_sent($email);
 
 ?>
 
